@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# sass
+/dart-sass
+*.map
+
 # testing
 /coverage
 
