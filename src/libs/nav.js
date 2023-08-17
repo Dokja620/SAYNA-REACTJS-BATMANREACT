@@ -1,6 +1,14 @@
 import React from "react";
-// import homeLogo from '../assets/circle.svg'
+import { NavLink } from "react-router-dom";
 
+
+// import homeLogo from '../assets/circle.svg'
+import homeLogo from '../assets/images/Logos/logohome.png';
+import upArrow from '../assets/images/Logos/logo_bat_flèche.png';
+import downArrow from '../assets/images/Logos/logo_bat_flèche_2.png';
+import iconFB from '../assets/images/Logos/icon_facebook.png';
+import iconIG from '../assets/images/Logos/icon_ig.png';
+import iconTW from '../assets/images/Logos/icon_tw.png';
 
 const Navbar = () => {
     return ( 
@@ -14,14 +22,27 @@ const Navbar = () => {
 
     
         <nav id="nav">
-            <div className="nav-logo"><h2>BATMAN</h2></div>
+            <div className="nav-logo"><img src={homeLogo} alt="Logo Home" /></div>
             <div className="nav-links">
                 <ul>
-                    <li><a href="#" className="links-home">HOME</a></li>
-                    <li><a href="./game.html" className="links-home">GAME</a></li>
+                    <li><NavLink to="home" className="links-home">HOME</NavLink></li>
+                    <li><NavLink to="game" className="links-home">GAME</NavLink></li>
+                    <li><NavLink to="e-shop" className="links-home">E-SHOP</NavLink></li>
+                    <li><NavLink to="account" className="links-home">MON COMPTE</NavLink></li>
                 </ul>
             </div>
         </nav>
+
+        {/* ScrollBar */}
+        <div class="scroll">
+            <div class="up"><a href="#nav"><img src={upArrow} alt="down"/></a></div>
+                <div class="mediasoc">
+                        <div><img src={iconFB} alt=""/></div>
+                        <div><img src={iconIG} alt=""/></div>
+                        <div><img src={iconTW} alt=""/></div>
+                </div>
+            <div class="up down"><a href="#contact"><img src={downArrow} alt="up"/></a></div>
+        </div>
     </header>
     );
 }

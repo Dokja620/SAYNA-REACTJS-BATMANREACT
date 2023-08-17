@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url(/src/styles/others/default.css);
+@import url(/src/styles/others/nav-scroll.css);
+@import url(/src/styles/others/cadre.css);
+@import url(/src/styles/others/button.css);
+@import url(/src/styles/others/footer-animation.css);
+/*font importation, je mets tout ici, c'est plus simple et efficace ainsi*/
+@font-face {
+  font-family: "Titre";
+  src: url(/src/assets/fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: "Titre H2";
+  src: url(/src/assets/fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: "Texte";
+  src: url(/src/assets/fonts/SpaceGrotesk-Regular.ttf);
+}
+h1, ul li {
+  font-family: "Titre";
+  font-size: 2.25em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button, h2 {
+  font-family: "Titre";
+  font-size: 1.25em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h6, h3 {
+  font-family: "Titre H2";
+  font-size: 0.9em;
+}
+
+p, label {
+  font-family: "Texte";
+  font-size: 1.125em;
+}
+
+label {
+  color: grey;
+}
+
+/*Background... First thing that the user will see...*/
+body {
+  background-color: black;
+  height: 901px;
+  font-size: 16px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 14px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 950px) and (max-width: 990px) {
+  .synopsis {
+    font-size: 0.9em;
   }
 }
+/*home bg*/
+.bg-home {
+  background: url(/src/assets/images/Illustrations/bathome/Bathome1.png) 80% 20%/cover no-repeat;
+}
+
+/*home bg*/
+.bg-game {
+  background: url(/src/assets/images/Illustrations/batgame/Batgame_1.png) 80% 20%/cover no-repeat;
+}
+
+/*home bg*/
+.bg-eshop {
+  background: url(/src/assets/images/Illustrations/bg_1.png) 80% 20%/cover no-repeat;
+}
+
+/*home bg*/
+.bg-account {
+  background: url(/src/assets/images/Illustrations/bg_3.png) 80% 20%/cover no-repeat;
+}
+
+/*# sourceMappingURL=App.css.map */
