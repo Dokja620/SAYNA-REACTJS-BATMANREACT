@@ -63,19 +63,24 @@ body{
 /*home bg*/
 .bg-home{
   background: url(/src/assets/images/Illustrations/bathome/Bathome1.png) 80% 20%/cover no-repeat;
+  box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
 
 /*home bg*/
 .bg-game{
   background: url(/src/assets/images/Illustrations/batgame/Batgame_1.png) 80% 20%/cover no-repeat;
+  box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
 
 /*home bg*/
 .bg-eshop{
   background: url(/src/assets/images/Illustrations/bg_1.png) 80% 20%/cover no-repeat;
+  box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
+/*responsive eshop*/
 
 /*home bg*/
 .bg-account{
-  background: url(/src/assets/images/Illustrations/bg_3.png) 80% 20%/cover no-repeat;
+  background: url(/src/assets/images/Illustrations/bg_3.png) left/cover no-repeat;
+  box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
