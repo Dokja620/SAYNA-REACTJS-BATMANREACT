@@ -8,6 +8,8 @@
     box-sizing: border-box;
     font-weight: normal;
     scroll-behavior: smooth;
+}
+*:not(header) {
     animation: fade-in .5s ease-in;
 }
 
@@ -16,8 +18,6 @@
     from{
         transform: translateX(-10%);
         opacity: .2;
-    }
-    to{
-        transform: translateX(0%);
+        filter: blur(15px);
     }
 }
