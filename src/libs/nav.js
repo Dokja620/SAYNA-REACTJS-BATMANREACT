@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 // import homeLogo from '../assets/circle.svg'
 import homeLogo from '../assets/images/Logos/logohome.png';
+import homeLogoMobile from '../assets/batman-silhouette-svgrepo-com.svg';
 import upArrow from '../assets/images/Logos/logo_bat_flèche.png';
 import downArrow from '../assets/images/Logos/logo_bat_flèche_2.png';
 import iconFB from '../assets/images/Logos/icon_facebook.png';
@@ -22,7 +23,15 @@ const Navbar = () => {
 
     
         <nav id="nav">
-            <div className="nav-logo"><img src={homeLogo} alt="Logo Home" /></div>
+            <div className="mobile-menu">
+                <div className="mobile-home"><img src={homeLogoMobile} alt="Logo Home"/></div>
+                <div className="menu-burger">
+                    <div className="line-burger"></div>
+                    <div className="line-burger"></div>
+                    <div className="line-burger"></div>
+                </div>
+            </div>
+            <div className="nav-logo desktop"><img src={homeLogo} alt="Logo Home"/></div>
             <div className="nav-links">
                 <ul>
                     <li><NavLink to="home" className="links-home">HOME</NavLink></li>

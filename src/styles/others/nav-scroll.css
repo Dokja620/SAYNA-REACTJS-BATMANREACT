@@ -102,3 +102,13 @@ nav {
     transform: rotate(90deg);
   }
 }
+
+/*responsive nav-bar*/
+.mobile-menu{
+  display: none;
+}
+@media (max-width: 900px) {
+  .mobile-menu{
+    display: block;
+  }
+}

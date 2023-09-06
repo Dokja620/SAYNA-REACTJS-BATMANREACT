@@ -2,6 +2,7 @@
 @charset "UTF-8";
 @import url(/src/styles/others/default.css);
 @import url(/src/styles/others/nav-scroll.css);
+@import url(/src/styles/others/nav-responsive.css) screen and (max-width: 900px);
 @import url(/src/styles/others/cadre.css);
 @import url(/src/styles/others/button.css);
 @import url(/src/styles/others/footer-animation.css);
@@ -66,7 +67,7 @@ body{
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
 
-/*home bg*/
+/*Game bg*/
 .bg-game{
   background: url(/src/assets/images/Illustrations/batgame/Batgame_1.png) 80% 20%/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
@@ -78,8 +79,12 @@ body{
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
 /*responsive eshop*/
-
-/*home bg*/
+@media (max-width: 900px) {
+  .bg-eshop{
+    background: url(/src/assets/images/Illustrations/bg_1_mobile.png) center/cover no-repeat;
+  }
+}
+/*Account bg*/
 .bg-account{
   background: url(/src/assets/images/Illustrations/bg_3.png) left/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
