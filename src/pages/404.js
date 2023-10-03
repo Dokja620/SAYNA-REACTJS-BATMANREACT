@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Game = () => {
+const notfind = () => {
     return ( 
         <div style={{ backgroundColor: 'black' }}>
             {/* Your main content goes here */}
@@ -10,4 +10,4 @@ const Game = () => {
     );
 }
  
-export default Game;
+export default notfind;

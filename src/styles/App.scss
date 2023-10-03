@@ -85,7 +85,15 @@ body{
   }
 }
 /*Account bg*/
-.bg-account{
+.bg-account,{
   background: url(/src/assets/images/Illustrations/bg_3.png) left/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+}
+.formulaire{
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  padding: 10%;
 }

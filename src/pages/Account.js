@@ -1,13 +1,41 @@
+// src/Game.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Game = () => {
-    return ( 
-        <div className="bg-account intro" style={{ height: '100vh' }}>
-            {/* Your main content goes here */}
-            <h1>MON COMPTE</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium assumenda a sapiente nisi explicabo ducimus exercitationem perspiciatis minus maxime ad adipisci nobis hic, ipsa voluptate eveniet! Consequatur, quam nulla eaque facilis mollitia porro. Rem tempore unde optio perspiciatis expedita cum soluta harum adipisci totam doloremque, laboriosam nemo nostrum ducimus.</p>
+  return (
+    <div className="bg-account intro" style={{ height: '100vh' }}>
+      <h1>CONNEXION</h1>
+      <Link to="/registration">
+        <button>Don't have an account, want to create one?</button>
+      </Link>
+      <form>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            // Add event handlers and state management for form input
+          />
         </div>
-    );
-}
- 
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            // Add event handlers and state management for form input
+          />
+        </div>
+        <Link to="/dashboard">
+            <button>Login</button>
+      </Link>
+      </form>
+    </div>
+  );
+};
+
 export default Game;
