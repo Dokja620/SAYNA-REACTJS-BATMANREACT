@@ -42,7 +42,7 @@ const Subpage = () => {
   };
 
   return (
-    <div className="bg-account intro" style={{ height: '100vh' }}>
+    <div className="bg-account intro subpage" style={{ height: '100vh' }}>
       <h1>SUBPAGE</h1>
       <Link to="/registration">Back to Registration</Link>
       <section>

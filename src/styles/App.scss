@@ -1,5 +1,11 @@
 
 @charset "UTF-8";
+/*SASS Partials*/
+@import "others/sass/home";
+@import "others/sass/account";
+@import "others/sass/eshop";
+
+/*Shared styles*/
 @import url(/src/styles/others/default.css);
 @import url(/src/styles/others/nav-scroll.css);
 @import url(/src/styles/others/nav-responsive.css) screen and (max-width: 900px);
@@ -19,6 +25,30 @@
   font-family: "Texte";
   src: url(/src/assets/fonts/SpaceGrotesk-Regular.ttf);
 }
+
+/*font importation, je mets tout ici, c'est plus simple et efficace ainsi*/
+@font-face {
+  font-family: 'Titre';
+  src: url(/src/assets/fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: 'Titre B1';
+  src: url(/src/assets/fonts/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Titre B2';
+  src: url(/src/assets/fonts/Rajdhani-Bold.ttf);
+}
+@font-face {
+  font-family: 'Titre H2';
+  src: url(/src/assets/fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: 'Texte';
+  src: url(/src/assets/fonts/SpaceGrotesk-Regular.ttf);
+}
+
+
 h1, ul li {
   font-family: "Titre";
   font-size: 2.25em;
@@ -65,6 +95,7 @@ body{
 .bg-home{
   background: url(/src/assets/images/Illustrations/bathome/Bathome1.png) 80% 20%/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+  height: 901px;
 }
 
 /*Game bg*/
@@ -85,7 +116,7 @@ body{
   }
 }
 /*Account bg*/
-.bg-account,{
+.bg-account{
   background: url(/src/assets/images/Illustrations/bg_3.png) left/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }

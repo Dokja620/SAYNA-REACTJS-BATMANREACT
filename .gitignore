@@ -8,6 +8,7 @@
 # sass
 /dart-sass
 *.map
+*.bat
 
 # testing
 /coverage
