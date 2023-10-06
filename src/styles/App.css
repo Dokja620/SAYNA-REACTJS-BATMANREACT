@@ -294,7 +294,8 @@ form select > option {
 }
 
 #shop {
-  min-height: 100vh;
+  margin-top: 25%;
+  height: 100vh;
   width: 100vw;
   display: flex;
   gap: 2%;
@@ -336,6 +337,15 @@ form select > option {
   left: 0;
 }
 
+.stuff {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+.stuff .goodies {
+  margin-bottom: 5%;
+}
 .stuff .sale {
   border: 1px solid #fff;
   height: 275px;
@@ -470,12 +480,14 @@ body {
 .bg-game {
   background: url(/src/assets/images/Illustrations/batgame/Batgame_1.png) 80% 20%/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+  height: 901px;
 }
 
 /*home bg*/
 .bg-eshop {
   background: url(/src/assets/images/Illustrations/bg_1.png) 80% 20%/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+  height: 901px;
 }
 
 /*responsive eshop*/
@@ -488,6 +500,7 @@ body {
 .bg-account {
   background: url(/src/assets/images/Illustrations/bg_3.png) left/cover no-repeat;
   box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+  height: 901px;
 }
 
 .formulaire {

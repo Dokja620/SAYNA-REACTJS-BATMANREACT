@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Game = () => {
   return (
-    <div className="bg-account intro" style={{ height: '100vh' }}>
+    <div className="bg-account intro">
       <div className="login">
         <form>
           <h1>CONNEXION</h1>

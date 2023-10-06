@@ -15,7 +15,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="bg-account intro" style={{ height: '100vh' }}>
+    <div className="bg-account intro">
       <h1>REGISTRATION</h1>
       <Link to="/">Back to Login</Link>
       <form>

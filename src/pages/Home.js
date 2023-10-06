@@ -24,7 +24,7 @@ import guillemets from '../assets/images/Logos/icon_guillemets_2.png';
 
 const Home = () => {
   return (
-    <main className=' intro'>
+    <main className='intro'>
       <section id="intro" className='bg-home'>
         <div className="parent">
           <div className="intro-text">

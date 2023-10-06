@@ -13,22 +13,15 @@ const EShop = () => {
     }));
   };
 
-  const handleCategoryChange = (category) => {
-    if (selectedCategories.includes(category)) {
-      setSelectedCategories(selectedCategories.filter((c) => c !== category));
-    } else {
-      setSelectedCategories([...selectedCategories, category]);
-    }
-  };
-
   return (
-    <div className="bg-eshop intro" style={{ height: '100vh' }}>
-      <section className='titile'>
+    <main className=' intro'>
+      <div className="bg-eshop intro">
+      <div className='titile'>
         <h1>
           RÉCUPEREZ LE FLOW DE BATMAN AVEC NOTRE E-SHOP
         </h1>
-      </section>
-      <section id="shop">
+      </div>
+      <div id="shop">
         <div className="filter">
           <h2>Filtres</h2>
           <div className='pricerange'>
@@ -68,8 +61,6 @@ const EShop = () => {
                       <label>
                         <input
                           type="checkbox"
-                          onChange={() => handleCategoryChange(`Category ${index + 1}`)}
-                          checked={selectedCategories.includes(`Category ${index + 1}`)}
                         />
                         Category {index + 1}
                       </label>
@@ -83,8 +74,6 @@ const EShop = () => {
                       <label>
                         <input
                           type="checkbox"
-                          onChange={() => handleCategoryChange(`Category ${index + 1}`)}
-                          checked={selectedCategories.includes(`Category ${index + 1}`)}
                         />
                         Couleur {index + 1}
                       </label>
@@ -98,8 +87,6 @@ const EShop = () => {
                       <label>
                         <input
                           type="checkbox"
-                          onChange={() => handleCategoryChange(`Category ${index + 1}`)}
-                          checked={selectedCategories.includes(`Category ${index + 1}`)}
                         />
                         Univers {index + 1}
                       </label>
@@ -110,28 +97,33 @@ const EShop = () => {
         </div>
       {/* Third section with a link to the Cart page */}
         <div className='stuff'>
-          <div className="goodies">
-            <div className="sale">
-              <h2 className='buy'>SALE</h2>
-              <div className="info">
-                <p>Buy This stuff for god's sake</p>
-                <div className="money">
-                  <p>
-                    <span className='before'>59$</span>
-                    <span>32$</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <Link to="/cart">
-              <div className='button'>
-                AJOUTER AU PANIER
-              </div>
-            </Link>
-          </div>
+                  {Array.from({ length: 20 }, (_, index) => (
+                    <div key={index}>
+                      <div className="goodies">
+                        <div className="sale">
+                          <h2 className='buy'>SALE</h2>
+                          <div className="info">
+                            <p>Buy Whatever This is for god's sake</p>
+                            <div className="money">
+                              <p>
+                                <span className='before'>59$</span>
+                                <span>32$</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <Link to="/cart">
+                          <div className='button'>
+                            AJOUTER AU PANIER
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
         </div>
-      </section>
+      </div>
     </div>
+    </main>
   );
 };
 
