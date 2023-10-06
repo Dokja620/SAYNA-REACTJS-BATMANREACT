@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const EShop = () => {
   const [priceRange, setPriceRange] = useState([0, 200]);
-  const [selectedCategories, setSelectedCategories] = useState([]);
 
   const handlePriceRangeChange = (e) => {
     const { name, value } = e.target;
